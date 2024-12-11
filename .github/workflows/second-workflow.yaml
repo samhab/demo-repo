@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get code
-        uses: actions/checkout
+        uses: actions/checkout@v4
       - name: Do Tests
         run: pylint .
   deploy:
@@ -13,6 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get code
-        uses: actions/checkout
+        uses: actions/checkout@v4
       - name: Deploy
         run: echo "Deploying..."
